@@ -1,0 +1,9 @@
+version: '3'
+services:
+  unittests:
+    image: microsoft/dotnet:2.1-sdk
+    volumes:
+      - .:/code
+    command:
+      - /bin/bash
+      - /code/docker-run-unittests.sh
